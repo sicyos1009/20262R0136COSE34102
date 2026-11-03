@@ -5,7 +5,5 @@ def gcd(a, b):
     return a
 
 
-if __name__ == "__main__":
-    a, b = map(int, input().split())
-    answer = gcd(a, b)
-    print(answer)
+a, b = map(int, input().split())
+print(gcd(a, b))
