@@ -1,9 +1,7 @@
 def gcd(first, second):
     first, second = abs(first), abs(second)
     while second != 0:
-        remainder = first % second
-        first = second
-        second = remainder
+        first, second = second, first % second
     return first
 
 
