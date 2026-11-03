@@ -1,11 +1,11 @@
-def gcd(first, second):
-    first, second = abs(first), abs(second)
-    while second != 0:
-        first, second = second, first % second
-    return first
+def gcd(a, b):
+    a, b = abs(a), abs(b)
+    while b:
+        a, b = b, a % b
+    return a
 
 
 if __name__ == "__main__":
-    first, second = map(int, input().split())
-    answer = gcd(first, second)
+    a, b = map(int, input().split())
+    answer = gcd(a, b)
     print(answer)
