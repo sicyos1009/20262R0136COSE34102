@@ -7,7 +7,6 @@ def gcd(first: int, second: int) -> int:
 
 
 if __name__ == "__main__":
-    first = int(input())
-    second = int(input())
+    first, second = map(int, input().split())
     answer = gcd(first, second)
     print("gcd:", answer)
