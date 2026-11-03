@@ -9,4 +9,4 @@ def gcd(first: int, second: int) -> int:
 if __name__ == "__main__":
     first, second = map(int, input().split())
     answer = gcd(first, second)
-    print("gcd:", answer)
+    print(answer)
